@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoMax Dealer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #c00;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?car,showroom') center/cover no-repeat;
+      color: white;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .cars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .car-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .car-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .car-card .info {
+      padding: 1rem;
+    }
+    .large-image {
+      display: block;
+      width: 100%;
+      max-width: 2000px;
+      height: auto;
+      margin: 3rem auto;
+      border-radius: 8px;
+    }
+    .btn {
+      background: #c00;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    footer {
+      background: #333;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    .floating-wa {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>AutoMax Dealer</strong></div>
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#katalog">Katalog</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="beranda">
+    <h1>Promo Mobil Toyota Terbaru</h1>
+    <p>Dapatkan penawaran menarik hanya di AutoMax Dealer</p>
+    <a href="#katalog" class="btn">Lihat Mobil</a>
+  </section>
+
+  <img class="large-image" src="https://source.unsplash.com/2000x1000/?car,dealership" alt="Gambar Besar Dealer">
+
+  <section class="section" id="katalog">
+    <h2>Katalog Mobil</h2>
+    <div class="cars">
+      <div class="car-card">
+        <img src="https://source.unsplash.com/400x300/?toyota,avanza" alt="Toyota Avanza">
+        <div class="info">
+          <h3>Toyota Avanza</h3>
+          <p>Mobil keluarga irit dan nyaman.</p>
+          <a href="#" class="btn">Detail</a>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="https://source.unsplash.com/400x300/?toyota,rush" alt="Toyota Rush">
+        <div class="info">
+          <h3>Toyota Rush</h3>
+          <p>Desain sporty dan cocok untuk segala medan.</p>
+          <a href="#" class="btn">Detail</a>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="https://source.unsplash.com/400x300/?toyota,fortuner" alt="Toyota Fortuner">
+        <div class="info">
+          <h3>Toyota Fortuner</h3>
+          <p>SUV premium untuk gaya dan performa maksimal.</p>
+          <a href="#" class="btn">Detail</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>AutoMax Dealer adalah mitra resmi penjualan mobil Toyota di Indonesia, memberikan pelayanan terbaik untuk Anda.</p>
+  </section>
+
+  <section class="section" id="kontak">
+    <h2>Kontak Kami</h2>
+    <p>Alamat: Jl. Mobil Impian No. 123, Jakarta</p>
+    <p>Telepon: 0812-3456-7890</p>
+    <p>Email: info@automaxdealer.id</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AutoMax Dealer. Hak cipta dilindungi.</p>
+  </footer>
+
+  <a href="https://wa.me/6281234567890" class="floating-wa" target="_blank">💬</a>
+</body>
+</html>
